@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaginaAlimentacion">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="86dp"
+        android:text="Alimentación"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/lnLy"
+        android:layout_width="284dp"
+        android:layout_height="482dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:id="@+id/lLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnImg1"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/comedorinstitucional"
+                tools:srcCompat="@drawable/comedorinstitucional" />
+
+            <ImageButton
+                android:id="@+id/btnImg2"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/sodalago"
+                tools:src="@drawable/sodalago"
+                tools:srcCompat="@drawable/common_google_signin_btn_icon_dark_focused" />
+
+            <ImageButton
+                android:id="@+id/btnImg3"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/comedordeportiva"
+                tools:srcCompat="@drawable/comedordeportiva" />
+
+            <ImageButton
+                android:id="@+id/btnImg4"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/comedoreste"
+                tools:srcCompat="@drawable/comedoreste" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
